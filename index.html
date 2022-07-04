@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="common.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./common.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_inner">
+            <div class="header_up">
+                <h1><a href="#"><img src="./img/logo.png" alt="로고"></a></h1>
+                <ul class="top_menu">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">전체메뉴</a></li>
+                    <li><a href="#">영문</a></li>
+                    <li><a href="#">환경부홈</a></li>
+                    <li><a href="#">어린이</a></li>
+                </ul>
+                <div class="ham">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="header_gnb">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">정보공개</a>
+                        <ul class="sub">
+                            <li><a href="#">정보공개제도안내</a></li>
+                            <li><a href="#">정보목록</a></li>
+                            <li><a href="#">사전정보공표</a></li>
+                            <li><a href="#">행정정보공개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">전자민원</a>
+                        <ul class="sub">
+                            <li><a href="#">일반민원신청</a></li>
+                            <li><a href="#">일반민원조회</a></li>
+                            <li><a href="#">서식민원신청</a></li>
+                            <li><a href="#">부조리.불친절신고</a></li>
+                            <li><a href="#">밀렵밀거래신고</a></li>
+                            <li><a href="#">예산낭비신고</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">국민마당</a>
+                        <ul class="sub">
+                            <li><a href="#">청장과의대화</a></li>
+                            <li><a href="#">환경게시판</a></li>
+                            <li><a href="#">온라인설문</a></li>
+                            <li><a href="#">국민제안</a></li>
+                            <li><a href="#">환경참여방</a></li>
+                            <li><a href="#">인터넷상담방</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">정보마당</a>
+                        <ul class="sub">
+                            <li><a href="#">부서별자료</a></li>
+                            <li><a href="#">환경측정·통계자료</a></li>
+                            <li><a href="#">조류(녹조)정보알림방</a></li>
+                            <li><a href="#">환경영향평가</a></li>
+                            <li><a href="#">토지매수안내</a></li>
+                            <li><a href="#">환경인정보교류</a></li>
+                            <li><a href="#">사이버환경교실</a></li>
+                            <li><a href="#">국회관련정보</a></li>
+                            <li><a href="#">간행물자료</a></li>
+                            <li><a href="#">서식자료실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">알림마당</a>
+                        <ul class="sub">
+                            <li><a href="#">고지공고</a></li>
+                            <li><a href="#">채용공고</a></li>
+                            <li><a href="#">보도·해명자료</a></li>
+                            <li><a href="#">동영상홍보관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">지역마당</a>
+                        <ul class="sub">
+                            <li><a href="#">금강이야기</a></li>
+                            <li><a href="#">금강갤러리</a></li>
+                            <li><a href="#">비단물결금강천리트레킹</a></li>
+                            <li><a href="#">생태탐방</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기관소개</a>
+                        <ul class="sub">
+                            <li><a href="#">청장소개</a></li>
+                            <li><a href="#">일반현황</a></li>
+                            <li><a href="#">수계관리위원회</a></li>
+                            <li><a href="#">조직및업무</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="sec1">
+        <div class="main_inner">
+            <h2>맑고 깨끗한 자연환경<br><strong>금강유역환경청</strong>이<br>함께합니다.</h2>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="main_inner">
+            <h3><strong>바로가기</strong>서비스</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="#"></a>
+                            <img src="./img/quick_bg06.png" alt="">
+                            <span>부서업무소개</span>
+                        </div>
+                        <div>
+                            <a href="#"></a>
+                            <img src="./img/quick_bg01.png" alt="">
+                            <span>토지매수정보시스템</span>
+                        </div>
+                        <div>
+                            <a href="#"></a>
+                            <img src="./img/quick_bg02.png" alt="">
+                            <span>환경컨설팅 운영</span>
+                        </div>
+                        <div>
+                            <a href="#"></a>
+                            <img src="./img/quick_bg03.png" alt="">
+                            <span>환경입지컨설팅</span>
+                        </div>
+                        <div>
+                            <a href="#"></a>
+                            <img src="./img/quick_bg04.png" alt="">
+                            <span>환경영향평가</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="#"></a>
+                            <img src="./img/quick_bg05.png" alt="">
+                            <span>환경공간정보서비스</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="sec3_inner">
+            <div class="sec3_sns_area">
+                <div class="sns">
+                    <h3>금강유역환경청 SNS</h3>
+                    <ul>
+                        <li><a href="#"><img src="./img/main_icon_facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/main_icon_naver.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/main_icon_twitter.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/main_icon_youtube.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="sec3_slide_con">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/20220119102823.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/20200117190144.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/20200117185942.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/20180821143943.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec3_notice_area">
+                <div class="tab_btn_area">
+                    <ul>
+                        <li class="on">공지/공고</li>
+                        <li>보도/해명자료</li>
+                        <li>부서별자료</li>
+                        <li>채용공고</li>
+                        <li><img src="./img/btn_vs_bn_more02.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="tab_content_area">
+                    <ul class="on">
+                        <li>
+                            <a href="#">멸종위기 야생생물 목록 개정 공청회 개최</a>
+                            <span>[22/06/22]</span>
+                        </li>
+                        <li>
+                            <a href="#">실시설계 관련 사업계획 추가자료 공개</a>
+                            <span>[22/06/10]</span>
+                        </li>
+                        <li>
+                            <a href="#">PQ평가자료 접수현황 및 업무중복도 평가자료 공개(실시설계 및 전략환평)</a>
+                            <span>[22/06/10]</span>
+                        </li>
+                        <li>
+                            <a href="#">용역사업 집행계획 및 평가자료 제출에 관한 공고</a>
+                            <span>[22/05/27]</span>
+                        </li>
+                        <li>
+                            <a href="#">'금강 세종시 구간 자연성회복 선도사업 기본 및 실시설계 용역' 사업책임기술인 기술능력 및 업무관리능력 평가결과 공개</a>
+                            <span>[22/05/26]</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">금강수계 국가보호어류(꾸구리, 2급) 복원 위해 관계기관 손 맞잡아</a>
+                            <span>[22/06/21]</span>
+                        </li>
+                        <li>
+                            <a href="#">환경부-금강유역청-한화이글스 '1회용컵 없는날' 캠페인 추진</a>
+                            <span>[22/06/14]</span>
+                        </li>
+                        <li>
+                            <a href="#">대청호 녹조 사전예방을 위한 조류대책위원회 개최</a>
+                            <span>[22/06/14]</span>
+                        </li>
+                        <li>
+                            <a href="#">장마철 대비 민·관 합동 「대청호 수중·수변 정화활동」 전개</a>
+                            <span>[22/06/08]</span>
+                        </li>
+                        <li>
+                            <a href="#">환경의 날 ‘하나뿐인 지구’ 위해 6월 한달간 탄소중립의 달 운영</a>
+                            <span>[22/06/08]</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">관리대행업(공공하수도(하수관로), 측정기기) 및 기술진단전문기관 변경등록(신고) 시 제출 서류 안내</a>
+                            <span>[22/06/22]</span>
+                        </li>
+                        <li>
+                            <a href="#">코로나19 격리의료폐기물 수입운반업체 지원 계획 알림(7차)</a>
+                            <span>[22/06/09]</span>
+                        </li>
+                        <li>
+                            <a href="#">시약 판매업 특별 교육 자료</a>
+                            <span>[22/06/07]</span>
+                        </li>
+                        <li>
+                            <a href="#">유해화학물질 시약 판매업 반납 신고서</a>
+                            <span>[22/05/26]</span>
+                        </li>
+                        <li>
+                            <a href="#">비산배출시설 신고사업장 의무 이행 사항 안내문</a>
+                            <span>[22/05/25]</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">금강수계 국가보호어류(꾸구리, 2급) 복원 위해 관계기관 손 맞잡아</a>
+                            <span>[22/06/21]</span>
+                        </li>
+                        <li>
+                            <a href="#">환경부-금강유역청-한화이글스 '1회용컵 없는날' 캠페인 추진</a>
+                            <span>[22/06/14]</span>
+                        </li>
+                        <li>
+                            <a href="#">대청호 녹조 사전예방을 위한 조류대책위원회 개최</a>
+                            <span>[22/06/14]</span>
+                        </li>
+                        <li>
+                            <a href="#">장마철 대비 민·관 합동 「대청호 수중·수변 정화활동」 전개</a>
+                            <span>[22/06/08]</span>
+                        </li>
+                        <li>
+                            <a href="#">환경의 날 ‘하나뿐인 지구’ 위해 6월 한달간 탄소중립의 달 운영</a>
+                            <span>[22/06/08]</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">2022년 낙동강(하류) 환경지킴이 결원구간 채용 공고</a>
+                            <span>[22/06/22]</span>
+                        </li>
+                        <li>
+                            <a href="#">영섬유역지원팀 기간제근로자(전문연구원) 채용 공고</a>
+                            <span>[22/06/22]</span>
+                        </li>
+                        <li>
+                            <a href="#">낙동강수계관리위원회 사무국 전문직 채용 재공고</a>
+                            <span>[22/06/22]</span>
+                        </li>
+                        <li>
+                            <a href="#">아프리카돼지열병(ASF) 대응 폐사체 수색인력 4차 채용 합격자 공고</a>
+                            <span>[22/06/21]</span>
+                        </li>
+                        <li>
+                            <a href="#">낙동강유역환경청 기간제근로자(전문연구원) 서류전형 합격자 발표 및 면접시험 계획 공고</a>
+                            <span>[22/06/20]</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec3_banner_area">
+                <ul>
+                    <li><a href="#"><img src="./img/20210602151004.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/20210210133014.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="sec4_inner">
+            <div class="board">
+                <div>
+                    <h3><span>알림판</span></h3>
+                </div>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/20220609155708.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220509172355.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220509172403.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220509172410.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220509172424.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220520140052.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220525150433.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="youtube_video">
+                <div>
+                    <h3><span>홍보동영상</span></h3>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/G9hyJmHTYfM"
+                        title="📣2022 환경부, 이렇게 일하겠습니다!💚 #2022년 #업무계획 #온라인대변인" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card_news">
+                <div>
+                    <h3><span>카드뉴스</span></h3>
+                </div>
+                <div class="swiper mySwiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/20220617140435.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220622135759.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220615163316.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220615163303.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220615163251.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220609100550.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220607130856.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/20220607130456.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="link">
+            <div class="inner">
+                <ul class="link_list">
+                    <li>
+                        <p>외청 및 소속기관</p>
+                        <div class="link_box">
+                            <ul>
+                                <li><a href="#">기상청</a></li>
+                                <li><a href="#">한강유역환경청</a></li>
+                                <li><a href="#">낙동강유역환경청</a></li>
+                                <li><a href="#">금강유역환경청</a></li>
+                                <li><a href="#">영산강유역환경청</a></li>
+                                <li><a href="#">원주지방환경청</a></li>
+                                <li><a href="#">대구지방환경청</a></li>
+                                <li><a href="#">전북지방환경청</a></li>
+                                <li><a href="#">수도권대기환경청</a></li>
+                                <li><a href="#">한강홍수통제소</a></li>
+                                <li><a href="#">낙동강홍수통제소</a></li>
+                                <li><a href="#">금강홍수통제소</a></li>
+                                <li><a href="#">영산강홍수통제소</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">국립환경과학원</a></li>
+                                <li><a href="#">국립환경인재개발원</a></li>
+                                <li><a href="#">온실가스종합정보센터</a></li>
+                                <li><a href="#">국가미세먼지정보센터</a></li>
+                                <li><a href="#">국립야생동물질병관리원</a></li>
+                                <li><a href="#">중앙환경분쟁조정위원회</a></li>
+                                <li><a href="#">국립생물자원관</a></li>
+                                <li><a href="#">화학물질안전원</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>관련기관</p>
+                        <div class="link_box_wrapper2">
+                            <div class="link_box1">
+                                <div><p>산하공공기관</p></div>
+                                <ul>
+                                    <li><a href="#">한국수자원공사</a></li>
+                                    <li><a href="#">한국환경공단</a></li>
+                                    <li><a href="#">국립공원공단</a></li>
+                                    <li><a href="#">수도권매립지관리공사</a></li>
+                                    <li><a href="#">한국환경산업기술원</a></li>
+                                    <li><a href="#">국립생태원</a></li>
+                                    <li><a href="#">국립낙동강생물자원관</a></li>
+                                    <li><a href="#">국립호남권생물자원관</a></li>
+                                    <li><a href="#">한국상하수도회</a></li>
+                                    <li><a href="#">환경보전협회</a></li>
+                                    <li><a href="#">수자원환경산업진흥원</a></li>
+                                    <li><a href="#">한국수자원조사기술원</a></li>
+                                </ul>
+                                <div class="link_box1">
+                                    <div><p>관련기관·협회</p></div>
+                                    <ul>
+                                        <li><a href="#">한국자연환경보전협회</a></li>
+                                        <li><a href="#">한국화학물질관리협회</a></li>
+                                        <li><a href="#">한국영향평가협회</a></li>
+                                        <li><a href="#">한국자원공원협회</a></li>
+                                        <li><a href="#">한국건설자원협회</a></li>
+                                        <li><a href="#">한국자동차환경협회</a></li>
+                                        <li><a href="#">야생생물관리협회</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">국립환경과학원</a></li>
+                                        <li><a href="#">국립환경인재개발원</a></li>
+                                        <li><a href="#">온실가스종합정보센터</a></li>
+                                        <li><a href="#">국가미세먼지정보센터</a></li>
+                                        <li><a href="#">국립야생동물질병관리원</a></li>
+                                        <li><a href="#">중앙환경분쟁조정위원회</a></li>
+                                        <li><a href="#">국립생물자원관</a></li>
+                                        <li><a href="#">화학물질안전원</a></li>
+                                    </ul>
+                                </div>
+                                <div class="link_box1">
+                                    <div><p>녹색환경지원센터</p></div>
+                                    <ul>
+                                        <li><a href="#">녹색환경지원센텨연합회</a></li>
+                                        <li><a href="#">서울지역</a></li>
+                                        <li><a href="#">부산지역</a></li>
+                                        <li><a href="#">대구지역</a></li>
+                                        <li><a href="#">인천지역</a></li>
+                                        <li><a href="#">광주지역</a></li>
+                                        <li><a href="#">대전지역</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">울산지역</a></li>
+                                        <li><a href="#">경기지역</a></li>
+                                        <li><a href="#">안산지역</a></li>
+                                        <li><a href="#">전북지역</a></li>
+                                        <li><a href="#">전남지역</a></li>
+                                        <li><a href="#">경북지역</a></li>
+                                        <li><a href="#">경남지역</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">충북지역</a></li>
+                                        <li><a href="#">충남</a></li>
+                                        <li><a href="#">강원지역</a></li>
+                                        <li><a href="#">제주지역</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>다른행정기관</p>
+                        <div class="link_box_wrapper">
+                            <div class="link_box2">
+                                <ul>
+                                    <li><a href="#">청와대</a></li>
+                                    <li><a href="#">국무총리실</a></li>
+                                    <li><a href="#">국회사무처</a></li>
+                                    <li><a href="#">국가정보원</a></li>
+                                    <li><a href="#">감사원</a></li>
+                                    <li><a href="#">방송통신위원회</a></li>
+                                    <li><a href="#">국가인권위원회</a></li>
+                                    <li><a href="#">국가보훈처</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">인사혁신처</a></li>
+                                    <li><a href="#">법제처</a></li>
+                                    <li><a href="#">식품의약품안전처</a></li>
+                                    <li><a href="#">공정거래위원회</a></li>
+                                    <li><a href="#">금융위원회</a></li>
+                                    <li><a href="#">국민권익위원회</a></li>
+                                    <li><a href="#">원자력안전위원회</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">기획재정부</a></li>
+                                    <li><a href="#">교육부</a></li>
+                                    <li><a href="#">과학기술정보통신부</a></li>
+                                    <li><a href="#">외규부</a></li>
+                                    <li><a href="#">통일부</a></li>
+                                    <li><a href="#">법무부</a></li>
+                                    <li><a href="#">국방부</a></li>
+                                    <li><a href="#">행정안전부</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">문화체육관광부</a></li>
+                                    <li><a href="#">농림축산식품부</a></li>
+                                    <li><a href="#">산업통상자원부</a></li>
+                                    <li><a href="#">보건복지부</a></li>
+                                    <li><a href="#">고용노동부</a></li>
+                                    <li><a href="#">여성가족부</a></li>
+                                    <li><a href="#">국토교통부</a></li>
+                                    <li><a href="#">해양수산부</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">중소벤처기업부</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">국세청</a></li>
+                                    <li><a href="#">관세청</a></li>
+                                    <li><a href="#">조달청</a></li>
+                                    <li><a href="#">통계청</a></li>
+                                    <li><a href="#">검찰청</a></li>
+                                    <li><a href="#">병무청</a></li>
+                                    <li><a href="#">방위사업청</a></li>
+                                    <li><a href="#">경찰청</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">소방청</a></li>
+                                    <li><a href="#">문화재청</a></li>
+                                    <li><a href="#">농촌진흥청</a></li>
+                                    <li><a href="#">산림청</a></li>
+                                    <li><a href="#">특허청</a></li>
+                                    <li><a href="#">행정중심복합도시건설청</a></li>
+                                    <li><a href="#">세만금개발청</a></li>
+                                    <li><a href="#">해양경찰청</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>지방자치단체</p>
+                        <div class="link_box">
+                            <ul>
+                                <li><a href="#">서울특별시</a></li>
+                                <li><a href="#">부산광역시</a></li>
+                                <li><a href="#">대구광역시</a></li>
+                                <li><a href="#">인천광역시</a></li>
+                                <li><a href="#">광주광역시</a></li>
+                                <li><a href="#">대전광역시</a></li>
+                                <li><a href="#">울산광역시</a></li>
+                                <li><a href="#">세종특별자치시</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">경기도</a></li>
+                                <li><a href="#">강원도</a></li>
+                                <li><a href="#">충척북도</a></li>
+                                <li><a href="#">충청남도</a></li>
+                                <li><a href="#">전라북도</a></li>
+                                <li><a href="#">전라남도</a></li>
+                                <li><a href="#">경상북도</a></li>
+                                <li><a href="#">경상남도</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">제주특별자치도</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_area">
+            <div class="inner2">
+                <img src="./img/footer_logo.png" alt="">
+                <div class="footer_text_con">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리기기 운영 · 관리방침</a></li>
+                        <li><a href="#">저작권정책</a></li>
+                        <li><a href="#"><img src="./img/main_icon_introEmp.png" alt="">직원소개</a></li>
+                        <li><a href="#"><img src="./img/main_icon_introLoc.png" alt="">찾아오시는길</a></li>
+                    </ul>
+                    <div class="footer_text">
+                        <p>(34142) 대전광역시 유성구 대학로 417 / 전화 : 042-865-0800</p>
+                        <p>Copyright (C) 2009 금강유역환경청. all rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
